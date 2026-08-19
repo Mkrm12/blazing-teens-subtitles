@@ -94,15 +94,30 @@ Built a custom HTML video player (player.html) with exact millisecond precision 
 IRL work is keeping me busy, but still chipping away at this a little every day.
 Continuing to meticulously track character names, yo-yo moves, and catchphrases.
 
-======================================================================
-
 DATE: 25-07-2026
 STATUS: All 40 Episodes Pass 2 Completed (QC 99% Accuracy)
 
 [FINAL ALIGNMENT UPDATE]
-All 40 episodes have now fully completed Pass 2. Subtitle timing, clash removal, and structural QC have been done across the entire season, reaching roughly 99% accuracy. Every file is stable, aligned, and consistent, with no major drift remaining.
+All 40 episodes have now fully completed Pass 2. 
+Subtitle timing, clash removal, and structural QC have been done.
+The entire season is now reaching roughly 99% alignment accuracy. 
+Every file is stable and consistent, with no major drift remaining.
 
 [PASS 3 PREP]
-Next step is the Final Pass 3 Consistency Sweep. This includes locking in character names, yo‑yo names, move terminology, catchphrases, formatting rules, and capitalisation across all episodes. Once this consistency checker pass is complete, the project should be ready for final packaging and publishing.
+Next step is the Final Pass 3 Consistency Sweep. 
+This includes locking in character names, yo‑yo names, and move terminology.
+Catchphrases, formatting rules, and capitalisation will be globally applied.
+Once this consistency checker pass is complete, we prep for deployment.
 
+======================================================================
+
+DATE: 17-08-2026
+STATUS: All 40 Episodes Pass 3 Completed (Consistency Locked)
+
+[CONSISTENCY & FINAL TOUCHES]
+Pass 3 is officially done across all 40 episodes.
+All character names, move names, and capitalisation rules are locked in.
+I used actual real-world yo-yo references online to perfect the terminology.
+Currently just running through the final finishing touches.
+Putting the cherry on top before packaging and publishing the files.
 ======================================================================
