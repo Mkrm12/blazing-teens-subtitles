@@ -9,8 +9,8 @@ Standard AI transcription tools (like raw Whisper) completely fail at Chinese sp
 
 I needed a pipeline that could literally "watch" the show like a human would before sending the data to an LLM for translation.
 
-### Current State: WIP (Iterating & Refining)
-This codebase is currently around "v10" and was heavily "vibe-coded" through trial and error in Lightning AI. It is actively being tested, tweaked, and refined to handle edge cases, fix AI hallucinations, and perfect the subtitle pacing. It's messy, but the architecture works.
+### Current State: Completed!
+All 40 Episodes, 4-Pass QC, 99% Timing Accuracy/Consistency.
 
 ### How It Works (The 4 Pillars)
 This pipeline doesn't just transcribe audio; it builds a highly dense, chronologically clamped context dump for LLMs (like DeepSeek or GPT-4) to translate.
@@ -26,9 +26,9 @@ During development, I benchmarked several LLMs for the final localization step:
 * **Gemini / Mistral / Qwen:** While powerful, they often struggled with the dense context-switching required for batch subtitle localization.
 * **DeepSeek (Current Winner):** Found to be the most resilient for batch translations. It maintains character consistency and "slang" flow better than others when fed 200+ blocks of multi-modal context (OCR + Audio + Vision).
 
-### Setup
-If you are running this on Lightning AI or a similar cloud GPU, use the provided `setup.sh` script. It specifically handles dependency clashes (like pinning NumPy to 1.x) to ensure Pyannote, EasyOCR, and Torch compile correctly together.
 
-```bash
-bash setup.sh
-bash run.sh
+### License & Disclaimer
+© Mkrm 2026. Licensed under CC BY 4.0. ([View License](https://creativecommons.org/licenses/by/4.0/))
+
+*Disclaimer: Blazing Teens (火力少年王) and its characters are the intellectual property of Alpha Group / Auldey. This is a non-commercial fan project. The CC BY 4.0 license applies strictly to the pipeline code, generated timestamps, and the translated text files provided in this repository.*
+
