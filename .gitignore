@@ -6,7 +6,11 @@
 *.wav
 *.json
 *.txt
+!project_log.txt
+!robots.txt
 *.srt
+!subtitles/*.srt
+!subtitles/*.zip
 
 # AI Caches
 .cache/
