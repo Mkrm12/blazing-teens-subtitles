@@ -1,21 +1,62 @@
-MIT License
+LICENSING & RIGHTS CONFIRMATION
+Copyright (c) 2026 Mukarram Nazir
 
+================================================================================
+1. ENGLISH SUBTITLE FILES (Episodes 01–40 .SRT & Season Archive)
+================================================================================
+Scope:
+All 40 English subtitle files located in `subtitles/`
+(`BlazingTeens_2006_S01E01.srt` through `BlazingTeens_2006_S01E40.srt`),
+`subtitles/BlazingTeens_2006_SRTs.zip`, and the corresponding release archives.
+
+Originality & Authorship:
+All English translations, dialogue adaptations, and subtitle timing
+synchronizations in these 40 files were created independently from scratch by
+Mukarram Nazir directly from the original Mandarin-language episodes, without
+copying or adapting any third-party dub, broadcast script, or external subtitle
+source.
+
+Public License — Creative Commons Attribution 4.0 International (CC BY 4.0):
+These 40 English subtitle files are licensed to the public under the Creative
+Commons Attribution 4.0 International License (CC BY 4.0). To view a copy of
+this license, visit: https://creativecommons.org/licenses/by/4.0/
+
+Explicit Unconditional Grant to Official Series Rights Holders:
+In addition to CC BY 4.0, Mukarram Nazir hereby grants Alpha Group Co., Ltd.
+(Guangdong Alpha Animation and Culture Co., Ltd. / 广东奥飞娱乐股份有限公司),
+its subsidiaries, affiliates, licensees, and authorized channel operators a
+perpetual, worldwide, irrevocable, non-exclusive, royalty-free license to use,
+reproduce, review, edit, modify, adapt, translate, and publicly distribute all
+40 English subtitle files across official YouTube channels (including
+@blazingteens2484), television broadcasts, streaming platforms, and archival
+releases, free of charge and without any mandatory attribution requirement or
+other restriction.
+
+Underlying Series Intellectual Property Disclaimer:
+"Blazing Teens" (火力少年王), the underlying audiovisual episodes, storylines,
+and characters remain the exclusive intellectual property of Alpha Group Co.,
+Ltd. / Auldey.
+
+
+================================================================================
+2. PIPELINE SOURCE CODE & TOOLING — MIT LICENSE
+================================================================================
 Copyright (c) 2026 Mukarram Nazir
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+of the pipeline software and associated scripts in this repository (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE AND SUBTITLE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR SUBTITLE FILES OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE OR SUBTITLE FILES.

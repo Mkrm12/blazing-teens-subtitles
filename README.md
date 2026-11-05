@@ -69,8 +69,12 @@ Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan
 
 ---
 
-### License & Disclaimer
+### License & Rights Confirmation
 
-© Mkrm 2026. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+© 2026 Mukarram Nazir. See [`LICENSE`](./LICENSE) for full terms:
 
-*Disclaimer: Blazing Teens (火力少年王) and its characters are the intellectual property of Alpha Group / Auldey. This is a non-commercial fan project. The CC BY 4.0 license applies strictly to the pipeline code, generated timestamps, and translated subtitle files in this repository. Official rights holders are welcome to use these subtitle tracks free of charge.*
+* **All 40 English Subtitle Files (`S01E01.srt` – `S01E40.srt` & `.zip` archive):** Original English translations and timing created independently from scratch by Mukarram Nazir and published under [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/).
+* **Official Rights-Holder Permission:** **Alpha Group Co., Ltd. (广东奥飞娱乐股份有限公司)**, its subsidiaries, and authorized channel operators are additionally granted a perpetual, worldwide, royalty-free license to review, modify, and publish all 40 English subtitle tracks across official YouTube channels and platforms free of charge and without restriction.
+* **Pipeline Code & Tooling:** Licensed under the **MIT License**.
+
+*Disclaimer: Blazing Teens (火力少年王) and its underlying episodes and characters are the intellectual property of Alpha Group Co., Ltd. / Auldey. This is a non-commercial fan preservation project.*
