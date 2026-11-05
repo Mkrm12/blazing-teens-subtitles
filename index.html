@@ -4,23 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blazing Teens (2006) — English Subtitles (Season 1, Episodes 1–40 .SRT) | 火力少年王</title>
-    <meta name="description" content="Complete English subtitles (.SRT) for all 40 episodes of the 2006 Chinese live-action series Blazing Teens (火力少年王 / Huoli Shaonianwang, Season 1), plus the open-source AI extraction pipeline.">
+    <meta name="description" content="English subtitles for all 40 episodes of the 2006 Chinese live-action series Blazing Teens (火力少年王, Season 1). 40 separate .SRT files, hand-checked across 4 QC passes, timed to the official Mandarin episodes.">
+    <link rel="canonical" href="https://mkrm12.github.io/blazing-teens-subtitles/">
+    <meta name="author" content="Mukarram Nazir">
     <meta property="og:title" content="Blazing Teens (2006) — Complete English Subtitles (Episodes 1–40 .SRT)">
-    <meta property="og:description" content="English subtitle (.SRT) files for all 40 episodes of the 2006 live-action yo-yo series Blazing Teens (火力少年王), restored via a 4-pillar OCR, audio, and vision pipeline.">
+    <meta property="og:description" content="40 separate English .SRT files for the 2006 live-action yo-yo series Blazing Teens (火力少年王), hand-checked across 4 QC passes.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mkrm12.github.io/blazing-teens-subtitles/">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TVSeries",
-      "name": "Blazing Teens",
-      "alternateName": ["火力少年王", "Huoli Shaonianwang", "Blazing Teens 2006", "Blazing Teens Season 1"],
-      "startDate": "2006-05-01",
-      "numberOfEpisodes": 40,
-      "numberOfSeasons": 1,
-      "countryOfOrigin": { "@type": "Country", "name": "China" },
-      "productionCompany": { "@type": "Organization", "name": "Alpha Group / Auldey" },
-      "subtitleLanguage": "en",
-      "description": "Complete community-restored English subtitle (.SRT) files for all 40 episodes of the 2006 Chinese live-action series Blazing Teens (Season 1)."
+      "@graph": [
+        {
+          "@type": "TVSeries",
+          "@id": "https://mkrm12.github.io/blazing-teens-subtitles/#series",
+          "name": "Blazing Teens",
+          "alternateName": ["火力少年王", "Huoli Shaonianwang", "Blazing Teens 2006", "Blazing Teens Season 1"],
+          "startDate": "2006",
+          "numberOfEpisodes": 40,
+          "numberOfSeasons": 1,
+          "inLanguage": "zh",
+          "countryOfOrigin": { "@type": "Country", "name": "China" },
+          "productionCompany": { "@type": "Organization", "name": "Alpha Group / Auldey" },
+          "actor": [
+            { "@type": "PerformanceRole", "actor": { "@type": "Person", "name": "Zhang Yifan" }, "characterName": "Li Fei (Leo)" }
+          ]
+        },
+        {
+          "@type": "Dataset",
+          "name": "Blazing Teens (2006) Season 1 English Subtitles — Episodes 1–40 (.SRT)",
+          "description": "40 separate English SubRip (.srt) subtitle files, one per episode, for the 2006 Chinese live-action series Blazing Teens (火力少年王, Season 1). Each episode was hand-checked across 4 quality-control passes and is timed to the 40-episode Mandarin broadcast uploaded on the official Blazing Teens YouTube channel.",
+          "url": "https://mkrm12.github.io/blazing-teens-subtitles/",
+          "sameAs": "https://github.com/Mkrm12/blazing-teens-subtitles",
+          "inLanguage": "en",
+          "about": { "@id": "https://mkrm12.github.io/blazing-teens-subtitles/#series" },
+          "creator": { "@type": "Person", "name": "Mukarram Nazir", "url": "https://github.com/Mkrm12" },
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "datePublished": "2026-08-22",
+          "keywords": ["Blazing Teens", "Blazing Teens 2006", "火力少年王", "English subtitles", "SRT", "Li Fei", "yo-yo"],
+          "distribution": {
+            "@type": "DataDownload",
+            "encodingFormat": "application/zip",
+            "contentUrl": "https://mkrm12.github.io/blazing-teens-subtitles/subtitles/BlazingTeens_2006_SRTs.zip"
+          }
+        }
+      ]
     }
     </script>
     <style>
@@ -83,6 +111,13 @@
         }
         .ep-item:hover { border-color: var(--link); color: var(--link); text-decoration: none; }
         footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+        .note { color: var(--muted); font-size: 0.92rem; margin-top: -8px; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-top: 8px; }
+        th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); color: #c9d1d9; }
+        th { color: var(--text); font-weight: 600; }
+        dl { margin: 0; }
+        dt { font-weight: 600; color: var(--text); margin-top: 14px; }
+        dd { margin: 4px 0 0; color: #c9d1d9; }
     </style>
 </head>
 <body>
@@ -97,6 +132,8 @@
         <a class="btn btn-secondary" href="./player.html">Open Browser Subtitle Player</a>
         <a class="btn btn-secondary" href="https://github.com/Mkrm12/blazing-teens-subtitles">View Repository on GitHub</a>
     </div>
+
+    <p class="note">40 separate <code>.srt</code> files, one per episode, each hand-checked across 4 quality-control passes.</p>
 
     <section class="panel">
         <h2>How to Watch</h2>
@@ -156,6 +193,48 @@
     <p>
         Because surviving episodes of the 2006 series contain burned-in Chinese text and noisy action audio that cause standalone Whisper models to hallucinate, the repository combines <strong>Whisper</strong> (audio + stutter deduplication), <strong>PyAnnote</strong> (speaker diarization), <strong>EasyOCR + PaddleOCR</strong> (dual-box frame master clock), and <strong>Florence-2</strong> (scene context), followed by <strong>DeepSeek + Gemini</strong> localization and 4 manual QC passes standardizing Auldey yo-yo models and trick terminology.
     </p>
+
+    <h2>Character Names</h2>
+    <p>The subtitles use the English names from the international broadcast. Original Mandarin names for the main cast:</p>
+    <table>
+        <thead><tr><th>Team</th><th>Original Name (Pinyin)</th><th>Name in Subtitles</th></tr></thead>
+        <tbody>
+            <tr><td>Jianghai</td><td>Li Fei (李非) — lead, played by Zhang Yifan (张逸凡)</td><td>Leo</td></tr>
+            <tr><td>Jianghai</td><td>Mai Jun (麦军)</td><td>Mark</td></tr>
+            <tr><td>Jianghai</td><td>Mi Li (米莉)</td><td>Mini</td></tr>
+            <tr><td>Jianghai</td><td>Mi Fan</td><td>Mickey</td></tr>
+            <tr><td>Jianghai</td><td>Mao Dayu</td><td>Matthew</td></tr>
+            <tr><td>Jianghai</td><td>Wang Xiaohua</td><td>Monica</td></tr>
+            <tr><td>Jianghai</td><td>Zhao Xiaosong</td><td>Shawn</td></tr>
+            <tr><td>Jianghai</td><td>Song Yuan</td><td>Chuck</td></tr>
+            <tr><td>Jianghai</td><td>Ding Wei</td><td>Teddy</td></tr>
+            <tr><td>Jianghai</td><td>Coach Gao Dashu (高大树)</td><td>Coach Tony</td></tr>
+            <tr><td>Chengnan</td><td>Chen Hao (陈浩)</td><td>Jacky</td></tr>
+            <tr><td>Chengnan</td><td>Ma Kai (马凯)</td><td>Marco</td></tr>
+            <tr><td>Chengnan</td><td>Zhou Yanyan</td><td>Zoe</td></tr>
+            <tr><td>Chengnan</td><td>Hu Xiaoyong</td><td>Hugo</td></tr>
+            <tr><td>Chengnan</td><td>Coach Xiao Shengnan</td><td>Coach Sarah</td></tr>
+            <tr><td>Saint Qiao</td><td>Maike / Mike (迈克)</td><td>Michael</td></tr>
+            <tr><td>Saint Qiao</td><td>Gu Deng</td><td>Gordon</td></tr>
+            <tr><td>Saint Qiao</td><td>Lin Na</td><td>Linda</td></tr>
+            <tr><td>Saint Qiao</td><td>Coach Wu Qiang</td><td>Coach William</td></tr>
+        </tbody>
+    </table>
+    <p class="note" style="margin-top:10px;">To remap names across all 40 files at once, see <a href="https://github.com/Mkrm12/blazing-teens-subtitles/blob/main/name_swapper.py"><code>name_swapper.py</code></a>.</p>
+
+    <h2>FAQ</h2>
+    <dl>
+        <dt>Which series is this for?</dt>
+        <dd>The original 2006 Chinese live-action <em>Blazing Teens</em> (火力少年王, Season 1, 40 episodes) following Li Fei / Leo and the Jianghai yo-yo team — not the later animated spin-offs.</dd>
+        <dt>Are all 40 episodes included?</dt>
+        <dd>Yes. Episodes 1–40 are each a separate <code>.srt</code> file, and all 40 are also bundled in one <code>.zip</code>.</dd>
+        <dt>Are these raw machine translations?</dt>
+        <dd>No. The pipeline produced the first draft; every episode then went through 4 manual QC passes for timing, accuracy, character names, and yo-yo terminology.</dd>
+        <dt>Which video do they sync to?</dt>
+        <dd>The 40-episode Mandarin broadcast — the same episodes uploaded on the official 火力少年王 Blazing Teens YouTube channel (<code>@blazingteens2484</code>).</dd>
+        <dt>Is this the same pack that's on other subtitle sites?</dt>
+        <dd>Yes. The same Season 1 pack (one <code>.zip</code>, 307 KB) was uploaded by the author to subtitle databases such as Podnapisi on 22 August 2026. This site and the GitHub repository are the primary, maintained source.</dd>
+    </dl>
 
     <footer>
         © 2026 Mukarram Nazir. All 40 English subtitle files (<code>S01E01</code>–<code>S01E40</code>) are original translations licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, with an unconditional perpetual royalty-free grant to <strong>Alpha Group Co., Ltd. / Auldey</strong> for official YouTube and broadcast use.

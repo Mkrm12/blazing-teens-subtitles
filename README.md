@@ -7,6 +7,8 @@ Complete English subtitles (`.srt`) for all 40 episodes of the 2006 Chinese live
 * **Complete Season 1 Pack (All 40 Episodes):** [**Download `BlazingTeens_2006_SRTs.zip`**](./subtitles/BlazingTeens_2006_SRTs.zip) *(also on [GitHub Releases](../../releases/tag/v1.0.0))*
 * **Individual Episodes:** Browse the [**`subtitles/`**](./subtitles/) folder (`S01E01.srt` – `S01E40.srt`)
 
+The pack contains **40 separate SubRip (`.srt`) files — one per episode** — each reviewed by hand across 4 quality-control passes rather than published as raw machine translation.
+
 ### Watching with Subtitles
 
 * **Over Official YouTube:** All 40 raw Chinese episodes are hosted on the official [**火力少年王 Blazing Teens** YouTube channel (`@blazingteens2484`)](https://www.youtube.com/watch?v=Xh0Yl-H1Y2Y). Install a free subtitle overlay extension such as [Substital](https://substital.com/) or [asbplayer](https://github.com/killergerbah/asbplayer), open any episode, and drag the matching `.srt` file onto the video.
@@ -37,6 +39,32 @@ During development, several models were benchmarked across 200+ block multimodal
 
 Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan*, *Saint Qiao*), competitive `1A`/`2A`/`4A` yo-yo trick names, and official **Auldey** yo-yo models (*Fire Warrior*, *Fire Warrior S*, *Fire Silver Electricity*, *Blazing Dragon Ball*, *Phantom Light Wheel*, *Speed Demon*, *Storm War Eagle*, *Shock Wave*, *Vortex*, *Super Light Speed*, *Nuclear Fission*, *Ghost Face*) were standardized across all 40 episodes. To view the Pinyin-to-English character mapping or batch-swap names across all 40 `.srt` files at once, see [`name_swapper.py`](./name_swapper.py).
 
+### Character Names
+
+The subtitles use the English names familiar from the international broadcast. For viewers who know the original Mandarin names, the main mappings are:
+
+| Team | Original Name (Pinyin) | Name in Subtitles |
+| :--- | :--- | :--- |
+| Jianghai | Li Fei (李非) — lead, played by Zhang Yifan (张逸凡) | Leo |
+| Jianghai | Mai Jun (麦军) | Mark |
+| Jianghai | Mi Li (米莉) | Mini |
+| Jianghai | Mi Fan | Mickey |
+| Jianghai | Mao Dayu | Matthew |
+| Jianghai | Wang Xiaohua | Monica |
+| Jianghai | Zhao Xiaosong | Shawn |
+| Jianghai | Song Yuan | Chuck |
+| Jianghai | Ding Wei | Teddy |
+| Jianghai | Coach Gao Dashu (高大树) | Coach Tony |
+| Chengnan | Chen Hao (陈浩) | Jacky |
+| Chengnan | Ma Kai (马凯) | Marco |
+| Chengnan | Zhou Yanyan | Zoe |
+| Chengnan | Hu Xiaoyong | Hugo |
+| Chengnan | Coach Xiao Shengnan | Coach Sarah |
+| Saint Qiao | Maike / Mike (迈克) | Michael |
+| Saint Qiao | Gu Deng | Gordon |
+| Saint Qiao | Lin Na | Linda |
+| Saint Qiao | Coach Wu Qiang | Coach William |
+
 <details>
 <summary><strong>Episode Subtitle File Index (Episodes 01–40)</strong></summary>
 
@@ -66,6 +94,23 @@ Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan
 | Episode 20 | [`BlazingTeens_2006_S01E20.srt`](./subtitles/BlazingTeens_2006_S01E20.srt) | Episode 40 | [`BlazingTeens_2006_S01E40.srt`](./subtitles/BlazingTeens_2006_S01E40.srt) |
 
 </details>
+
+### FAQ
+
+**Which series is this for?**
+The original 2006 Chinese live-action *Blazing Teens* (火力少年王, Season 1, 40 episodes) following Li Fei / Leo and the Jianghai yo-yo team. It is not for the later animated *Blazing Teens* spin-offs.
+
+**Are all 40 episodes included?**
+Yes. Episodes 1–40 are each provided as a separate `.srt` file (`BlazingTeens_2006_S01E01.srt` – `S01E40.srt`), and all 40 are also bundled in a single `.zip`.
+
+**Are these raw machine translations?**
+No. The pipeline produced the first draft, then every episode went through 4 manual QC passes for timing, translation accuracy, character names, and yo-yo terminology.
+
+**Which video do they sync to?**
+They are timed against the 40-episode Mandarin broadcast — the same episodes uploaded on the official 火力少年王 Blazing Teens YouTube channel (`@blazingteens2484`).
+
+**Is this the same pack that's on other subtitle sites?**
+Yes. The same Season 1 English pack (one `.zip`, 307 KB) was uploaded by the author to subtitle databases such as Podnapisi on 22 August 2026. This repository is the primary, maintained source.
 
 ---
 

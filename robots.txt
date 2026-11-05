@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://mkrm12.github.io/blazing-teens-subtitles/sitemap.xml

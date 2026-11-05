@@ -8,6 +8,7 @@
 *.txt
 !project_log.txt
 !robots.txt
+!2404fbc9c9463f20f2e8af0f1a7e3da6.txt
 *.srt
 !subtitles/*.srt
 !subtitles/*.zip
