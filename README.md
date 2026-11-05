@@ -6,13 +6,14 @@ Complete English subtitles (`.srt`) for all 40 episodes of the 2006 Chinese live
 
 * **Complete Season 1 Pack (All 40 Episodes):** [**Download `BlazingTeens_2006_SRTs.zip`**](./subtitles/BlazingTeens_2006_SRTs.zip) *(also on [GitHub Releases](../../releases/tag/v1.0.0))*
 * **Individual Episodes:** Browse the [**`subtitles/`**](./subtitles/) folder (`S01E01.srt` – `S01E40.srt`)
+* **Mirror:** [Internet Archive](https://archive.org/details/blazing-teens-2006-eng-subs-full) · **Website:** [mkrm12.github.io/blazing-teens-subtitles](https://mkrm12.github.io/blazing-teens-subtitles/)
 
 The pack contains **40 separate SubRip (`.srt`) files — one per episode** — each reviewed by hand across 4 quality-control passes rather than published as raw machine translation.
 
 ### Watching with Subtitles
 
-* **Over Official YouTube:** All 40 raw Chinese episodes are hosted on the official [**火力少年王 Blazing Teens** YouTube channel (`@blazingteens2484`)](https://www.youtube.com/watch?v=Xh0Yl-H1Y2Y). Install a free subtitle overlay extension such as [Substital](https://substital.com/) or [asbplayer](https://github.com/killergerbah/asbplayer), open any episode, and drag the matching `.srt` file onto the video.
-* **Local Video Playback:** Drop any raw `.mp4` episode and `.srt` file into VLC/MPV, or use the included millisecond-accurate browser player ([`player.html`](./player.html)).
+* **On YouTube:** All 40 original Mandarin episodes are on the official [**火力少年王 Blazing Teens** YouTube channel (`@blazingteens2484`)](https://www.youtube.com/watch?v=Xh0Yl-H1Y2Y). Install a free subtitle overlay extension such as [Substital](https://substital.com/) or [asbplayer](https://github.com/killergerbah/asbplayer), open any episode, and drag the matching `.srt` file onto the video.
+* **Local Playback:** Open any `.mp4` episode with its `.srt` file in VLC/MPV, or use the included browser player ([`player.html`](./player.html)).
 
 ---
 
@@ -20,24 +21,24 @@ The pack contains **40 separate SubRip (`.srt`) files — one per episode** — 
 
 This started as a pure passion project. Growing up across Asia, *Blazing Teens* (2006) aired dubbed on networks like Cartoon Network and Pogo and sparked a massive Auldey yo-yo craze. Two decades later, all of the old English and Hindi broadcast dubs have become lost media — only raw Mandarin episodes with hardcoded Chinese text burned directly into the video frames survived.
 
-Standard AI transcription tools (like raw Whisper) fail completely on 2000s Chinese sports dramas. They hallucinate during loud action scenes, stutter when characters shout, and ignore burned-in on-screen text like location signs and named yo-yo techniques. I needed a pipeline that could literally "watch" each frame the way a human would before handing structured context to an LLM for translation.
+Standard transcription tools (like raw Whisper) struggle badly with 2000s Chinese sports dramas. They hallucinate during loud action scenes, stutter when characters shout, and ignore burned-in on-screen text like location signs and named yo-yo techniques. I needed a pipeline that could "watch" each frame the way a person would before handing that context to an LLM for translation.
 
 ### How the Pipeline Works (The 4 Pillars)
 
-Rather than transcribing audio in isolation, the pipeline builds a chronologically clamped multimodal context dump for each episode:
+Rather than transcribing audio on its own, the pipeline combines four sources into one time-aligned context file per episode:
 
 1. **Audio (`Whisper`):** Extracts raw Mandarin dialogue and runs a custom NLP deduplicator to strip out "Whisper stutters" during loud yo-yo battles.
 2. **Speaker Diarization (`PyAnnote`):** Maps speaker turns across multi-character scenes so dialogue attribution stays consistent.
 3. **Dual-Box OCR Master Clock (`EasyOCR` + `PaddleOCR`):** Sweeps video frames to read hardcoded Chinese subtitles, location cards, and technique titles — acting as the master timing anchor so subtitle cues stay synced and readable.
 4. **Vision Context (`Florence-2`):** Generates concise visual scene descriptions so the translation stage understands what is physically happening on screen.
 
-Output dumps are split into two parts per episode to avoid LLM context-window degradation, checked mathematically for timestamp overlaps with [`stitcher.py`](./stitcher.py), and reviewed across 4 manual QC passes using [`player.html`](./player.html).
+Each episode's context is split into two halves to keep translation quality consistent, checked for overlapping timestamps with [`stitcher.py`](./stitcher.py), and reviewed across 4 manual QC passes using [`player.html`](./player.html).
 
 ### Translation & Localization
 
 During development, several models were benchmarked across 200+ block multimodal batches (including Mistral and Qwen). A dual-model workflow proved strongest: **DeepSeek** handled dense structural translation and slang consistency, while **Gemini** refined natural English phrasing.
 
-Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan*, *Saint Qiao*), competitive `1A`/`2A`/`4A` yo-yo trick names, and official **Auldey** yo-yo models (*Fire Warrior*, *Fire Warrior S*, *Fire Silver Electricity*, *Blazing Dragon Ball*, *Phantom Light Wheel*, *Speed Demon*, *Storm War Eagle*, *Shock Wave*, *Vortex*, *Super Light Speed*, *Nuclear Fission*, *Ghost Face*) were standardized across all 40 episodes. To view the Pinyin-to-English character mapping or batch-swap names across all 40 `.srt` files at once, see [`name_swapper.py`](./name_swapper.py).
+Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan*, *Saint Qiao*), competitive `1A`/`2A`/`4A` yo-yo trick names, and official **Auldey** yo-yo models (*Fire Warrior*, *Fire Warrior S*, *Fire Silver Electricity*, *Blazing Dragon Ball*, *Phantom Light Wheel*, *Speed Demon*, *Storm War Eagle*, *Shock Wave*, *Vortex*, *Super Light Speed*, *Nuclear Fission*, *Ghost Face*) were standardized across all 40 episodes.
 
 ### Character Names
 
@@ -64,6 +65,8 @@ The subtitles use the English names familiar from the international broadcast. F
 | Saint Qiao | Gu Deng | Gordon |
 | Saint Qiao | Lin Na | Linda |
 | Saint Qiao | Coach Wu Qiang | Coach William |
+
+To remap any of these names across all 40 `.srt` files at once, see [`name_swapper.py`](./name_swapper.py).
 
 <details>
 <summary><strong>Episode Subtitle File Index (Episodes 01–40)</strong></summary>
@@ -110,7 +113,7 @@ No. The pipeline produced the first draft, then every episode went through 4 man
 They are timed against the 40-episode Mandarin broadcast — the same episodes uploaded on the official 火力少年王 Blazing Teens YouTube channel (`@blazingteens2484`).
 
 **Is this the same pack that's on other subtitle sites?**
-Yes. The same Season 1 English pack (one `.zip`, 307 KB) was uploaded by the author to subtitle databases such as Podnapisi on 22 August 2026. This repository is the primary, maintained source.
+Yes. The same Season 1 English pack (one `.zip`, 307 KB) was uploaded by the author to subtitle databases such as Podnapisi on 22 August 2026, and is mirrored on the [Internet Archive](https://archive.org/details/blazing-teens-2006-eng-subs-full). This repository is the primary, maintained source.
 
 ---
 
