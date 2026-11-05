@@ -35,7 +35,7 @@ Output dumps are split into two parts per episode to avoid LLM context-window de
 
 During development, several models were benchmarked across 200+ block multimodal batches (including Mistral and Qwen). A dual-model workflow proved strongest: **DeepSeek** handled dense structural translation and slang consistency, while **Gemini** refined natural English phrasing.
 
-Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan*, *Saint Qiao*), competitive `1A`/`2A`/`4A` yo-yo trick names, and official **Auldey** yo-yo models (*Fire Warrior*, *Fire Warrior S*, *Fire Silver Electricity*, *Blazing Dragon Ball*, *Phantom Light Wheel*, *Speed Demon*, *Storm War Eagle*, *Shock Wave*, *Vortex*, *Super Light Speed*, *Nuclear Fission*, *Ghost Face*) were standardized across all 40 episodes.
+Across the final manual QC passes, character names, teams (*Jianghai*, *Chengnan*, *Saint Qiao*), competitive `1A`/`2A`/`4A` yo-yo trick names, and official **Auldey** yo-yo models (*Fire Warrior*, *Fire Warrior S*, *Fire Silver Electricity*, *Blazing Dragon Ball*, *Phantom Light Wheel*, *Speed Demon*, *Storm War Eagle*, *Shock Wave*, *Vortex*, *Super Light Speed*, *Nuclear Fission*, *Ghost Face*) were standardized across all 40 episodes. To view the Pinyin-to-English character mapping or batch-swap names across all 40 `.srt` files at once, see [`name_swapper.py`](./name_swapper.py).
 
 <details>
 <summary><strong>Episode Subtitle File Index (Episodes 01–40)</strong></summary>
